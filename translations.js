@@ -8,8 +8,8 @@ const translations = {
     
     // Home Page
     tagline: 'Handmade with care',
-    hero_title: 'Những chiếc túi đẹp cho mỗi câu chuyện.',
-    hero_copy: 'Mỗi chiếc túi xách được làm thủ công bằng những vật liệu cao cấp, kết cấu mềm mAt, và những chi tiết suy nghĩ kỹ lưỡng — hoàn hảo cho cuộc sống hàng ngày, làm quà tặng, hoặc những dịp đặc biệt.',
+    hero_title: 'Những chiếc túi xách và mũ đẹp cho mỗi câu chuyện.',
+    hero_copy: 'Mỗi chiếc túi xách và mũ được làm thủ công bằng những vật liệu cao cấp, kết cấu mềm mAi, và những chi tiết suy nghĩ kỹ lưỡng — hoàn hảo cho cuộc sống hàng ngày, làm quà tặng, hoặc những dịp đặc biệt.',
     shop_inquiry: 'Yêu cầu mua hàng',
     meet_maker: 'Gặp người sáng tạo',
     featured: 'Nổi bật',
@@ -18,7 +18,7 @@ const translations = {
     
     // Collections
     collections: 'Bộ sưu tập',
-    collections_title: 'Những chiếc túi xách được thiết kế cho tủ quần áo vượt thời gian.',
+    collections_title: 'Những chiếc túi xách và mũ được làm thủ công cho mọi dịp.',
     classic_satchel: 'Túi Satchel Cổ điển',
     classic_satchel_copy: 'Đường viền cấu trúc và phần cứng tinh tế làm cho chiếc túi này trở thành người bạn đi làm hoàn hảo hàng ngày.',
     woven_crossbody: 'Túi Crossbody Đan',
@@ -72,8 +72,10 @@ const translations = {
     
     // Gallery Page
     gallery_tagline: 'Thư viện trưng bày',
-    gallery_title: 'Những chiếc túi xách được làm bằng tay đang hoạt động.',
-    gallery_copy: 'Khám phá bộ sưu tập các chiếc túi xách được làm thủ công đẹp mắt. Nhấp vào bất kỳ hình ảnh nào để xem chi tiết đầy đủ.'
+    gallery_title: 'Những chiếc túi xách và mũ được làm bằng tay đang hoạt động.',
+    gallery_copy: 'Khám phá các bộ sưu tập các chiếc túi xách và mũ được làm thủ công đẹp mắt. Nhấp vào bất kỳ hình ảnh nào để xem chi tiết đầy đủ.',
+    handbags: 'Túi xách',
+    hats: 'Mũ'
   },
   en: {
     // Header & Nav
@@ -84,8 +86,8 @@ const translations = {
     
     // Home Page
     tagline: 'Handmade with care',
-    hero_title: 'Beautiful bags for every story.',
-    hero_copy: 'Each handbag is crafted by hand using premium materials, soft textures, and thoughtful details — perfect for daily life, gifting, or a special occasion.',
+    hero_title: 'Beautiful bags and hats for every story.',
+    hero_copy: 'Each handbag and hat is crafted by hand using premium materials, soft textures, and thoughtful details — perfect for daily life, gifting, or a special occasion.',
     shop_inquiry: 'Shop Inquiry',
     meet_maker: 'Meet the Maker',
     featured: 'Featured',
@@ -94,7 +96,7 @@ const translations = {
     
     // Collections
     collections: 'Collections',
-    collections_title: 'Handbags crafted for a timeless wardrobe.',
+    collections_title: 'Handmade handbags and hats for every occasion.',
     classic_satchel: 'Classic Satchel',
     classic_satchel_copy: 'Structured lines and subtle hardware make this bag a polished everyday companion.',
     woven_crossbody: 'Woven Crossbody',
@@ -148,7 +150,9 @@ const translations = {
     
     // Gallery Page
     gallery_tagline: 'Visual Gallery',
-    gallery_title: 'Handmade bags in action.',
-    gallery_copy: 'Explore our collection of beautifully crafted handbags. Click any image to view full details.'
+    gallery_title: 'Handmade bags and hats in action.',
+    gallery_copy: 'Explore our collections of beautifully crafted handbags and hats. Click any image to view full details.',
+    handbags: 'Handbags',
+    hats: 'Hats'
   }
 };

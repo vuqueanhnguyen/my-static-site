@@ -32,12 +32,16 @@
       <section class="hero hero-gallery">
         <div class="container hero-inner">
           <p class="eyebrow" data-i18n="gallery_tagline">Visual Gallery</p>
-          <h1 data-i18n="gallery_title">Handmade bags in action.</h1>
-          <p class="hero-copy" data-i18n="gallery_copy">Explore our collection of beautifully crafted handbags. Click any image to view full details.</p>
+          <h1 data-i18n="gallery_title">Handmade bags and hats in action.</h1>
+          <p class="hero-copy" data-i18n="gallery_copy">Explore our collections of beautifully crafted handbags and hats. Click any image to view full details.</p>
         </div>
       </section>
 
       <section class="container gallery-section">
+        <div class="product-tabs-nav">
+          <a href="#handbags" class="product-tab active" data-category="handbags" data-i18n="handbags">Handbags</a>
+          <a href="#hats" class="product-tab" data-category="hats" data-i18n="hats">Hats</a>
+        </div>
         <div class="gallery-grid" id="galleryGrid">
           <!-- Gallery items will be populated here -->
         </div>
@@ -48,7 +52,12 @@
     <div class="lightbox" id="lightbox">
       <div class="lightbox-content">
         <button class="lightbox-close" id="lightboxClose">&times;</button>
-        <img id="lightboxImage" src="" alt="">
+        <div class="lightbox-image-container">
+          <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+          <img id="lightboxImage" src="" alt="">
+          <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+          <span class="image-counter" id="imageCounter"></span>
+        </div>
         <div class="lightbox-caption">
           <h2 id="lightboxTitle"></h2>
           <p id="lightboxDesc"></p>
