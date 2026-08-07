@@ -3,6 +3,7 @@ const translations = {
     // Header & Nav
     home: 'Trang chủ',
     about: 'Về chúng tôi',
+    gallery: 'Thư viện',
     contact: 'Liên hệ',
     
     // Home Page
@@ -67,12 +68,18 @@ const translations = {
     
     // Footer
     footer_tagline: 'Được thiết kế để mang những khoảnh khắc của bạn một cách đẹp.',
-    footer_description: 'Những chiếc túi xách được làm thủ công cho sự sang trọng hàng ngày.'
+    footer_description: 'Những chiếc túi xách được làm thủ công cho sự sang trọng hàng ngày.',
+    
+    // Gallery Page
+    gallery_tagline: 'Thư viện trưng bày',
+    gallery_title: 'Những chiếc túi xách được làm bằng tay đang hoạt động.',
+    gallery_copy: 'Khám phá bộ sưu tập các chiếc túi xách được làm thủ công đẹp mắt. Nhấp vào bất kỳ hình ảnh nào để xem chi tiết đầy đủ.'
   },
   en: {
     // Header & Nav
     home: 'Home',
     about: 'About',
+    gallery: 'Gallery',
     contact: 'Contact',
     
     // Home Page
@@ -137,6 +144,11 @@ const translations = {
     
     // Footer
     footer_tagline: 'Designed to carry your moments beautifully.',
-    footer_description: 'Beautiful handmade bags for your everyday story.'
+    footer_description: 'Beautiful handmade bags for your everyday story.',
+    
+    // Gallery Page
+    gallery_tagline: 'Visual Gallery',
+    gallery_title: 'Handmade bags in action.',
+    gallery_copy: 'Explore our collection of beautifully crafted handbags. Click any image to view full details.'
   }
 };

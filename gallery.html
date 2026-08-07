@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact — Le Petit Sac</title>
+    <title>Gallery — Le Petit Sac</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -29,45 +29,43 @@
     </header>
 
     <main>
-      <section class="hero hero-contact">
+      <section class="hero hero-gallery">
         <div class="container hero-inner">
-          <p class="eyebrow" data-i18n="contact_tagline">Let's connect</p>
-          <h1 data-i18n="contact_title">Custom handbag inquiries and orders.</h1>
-          <p class="hero-copy" data-i18n="contact_copy">Reach out to request a new design, custom colors, or a handcrafted gift for someone special.</p>
+          <p class="eyebrow" data-i18n="gallery_tagline">Visual Gallery</p>
+          <h1 data-i18n="gallery_title">Handmade bags in action.</h1>
+          <p class="hero-copy" data-i18n="gallery_copy">Explore our collection of beautifully crafted handbags. Click any image to view full details.</p>
         </div>
       </section>
 
-      <section class="container contact-grid">
-        <div class="contact-details">
-          <h2 data-i18n="say_hello">Say hello</h2>
-          <p data-i18n="respond_time">We respond within 1-2 business days.</p>
-          <p><strong data-i18n="email_label">Email</strong><br>hello@lepetitsac.com</p>
-          <p><strong data-i18n="instagram_label">Instagram</strong><br>@lepetitsac</p>
-          <p><strong data-i18n="location_label">Location</strong><br>Handcrafted in Vietnam</p>
-        </div>
-        <div class="contact-form-card">
-          <form id="contactForm">
-            <label for="name" data-i18n="name_label">Name</label>
-            <input id="name" name="name" required>
-            <label for="email" data-i18n="email_label">Email</label>
-            <input id="email" name="email" type="email" required>
-            <label for="message" data-i18n="message_label">Message</label>
-            <textarea id="message" name="message" rows="5"></textarea>
-            <button type="submit" data-i18n="send_message">Send Message</button>
-          </form>
+      <section class="container gallery-section">
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Gallery items will be populated here -->
         </div>
       </section>
     </main>
+
+    <!-- Lightbox modal -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <img id="lightboxImage" src="" alt="">
+        <div class="lightbox-caption">
+          <h2 id="lightboxTitle"></h2>
+          <p id="lightboxDesc"></p>
+        </div>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
           <p class="footer-logo">Le Petit Sac</p>
-          <p>Designed to carry your moments beautifully.</p>
+          <p data-i18n="footer_description">Beautiful handmade bags for your everyday story.</p>
         </div>
       </div>
     </footer>
 
+    <script src="gallery-data.js"></script>
     <script src="script.js" defer></script>
   </body>
 </html>
