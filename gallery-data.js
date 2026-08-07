@@ -100,8 +100,10 @@ const hatItems = [
     title: 'Straw Summer Hat',
     desc: 'Lightweight and breathable, perfect for sunny days. Handwoven natural straw with silk band.',
     images: [
-      'https://images.unsplash.com/photo-1523521041103-b860113b3b78?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1529631819178-1bffc26076b5?auto=format&fit=crop&w=800&q=80'
+      'images/Hat1_1.jpg',
+      'images/Hat1_2.jpg',
+      'images/Hat1_3.jpg',
+      'images/Hat1_4.jpg'
     ],
     tags: ['Straw', 'Summer', 'Featured']
   },
@@ -110,9 +112,10 @@ const hatItems = [
     title: 'Straw Summer Hat 2',
     desc: 'Classic French-inspired beret in soft merino wool. Warm and stylish for any season.',
     images: [
-      'https://images.unsplash.com/photo-1529631819178-1bffc26076b5?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1539076519371-39c669300bf0?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1588350921529-8ac0c3a6b89f?auto=format&fit=crop&w=800&q=80'
+      'images/Hat2_1.jpg',
+      'images/Hat2_2.jpg',
+      'images/Hat2_3.jpg',
+      'images/Hat2_4.jpg'
     ],
     tags: ['Beret', 'Classic', 'Warm']
   },
@@ -121,8 +124,10 @@ const hatItems = [
     title: 'Straw Summer Hat 3',
     desc: 'Elegant felt hat with a broad brim, perfect for sun protection and sophisticated style.',
     images: [
-      'https://images.unsplash.com/photo-1539076519371-39c669300bf0?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1533022266282-e7bdf34f27a5?auto=format&fit=crop&w=800&q=80'
+      'images/Hat3_1.jpg',
+      'images/Hat3_2.jpg',
+      'images/Hat3_3.jpg',
+      'images/Hat3_4.jpg'
     ],
     tags: ['Felt', 'Elegant', 'Sun Protection']
   },
@@ -131,12 +136,14 @@ const hatItems = [
     title: 'Casual Baseball Cap',
     desc: 'Comfortable and versatile cotton cap with embroidered details. Perfect for everyday wear.',
     images: [
-      'https://images.unsplash.com/photo-1588350921529-8ac0c3a6b89f?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1523521041103-b860113b3b78?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1529631819178-1bffc26076b5?auto=format&fit=crop&w=800&q=80'
+      'images/Hat4_1.jpg',
+      'images/Hat4_2.jpg',
+      'images/Hat4_3.jpg',
+      'images/Hat4_4.jpg'
     ],
     tags: ['Cap', 'Casual', 'Sports']
   },
+  /*
   {
     id: 105,
     title: 'Vintage Cloche Hat',
@@ -158,6 +165,7 @@ const hatItems = [
     ],
     tags: ['Beanie', 'Winter', 'Cozy']
   }
+    */
 ];
 
 // Render gallery on page load
