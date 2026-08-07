@@ -6,6 +6,7 @@ Quick start
 
 1. Open this folder in VS Code.
 2. Open `index.html` in the editor and right-click → *Open with Live Server* (install the Live Server extension), or simply open `index.html` in your browser.
+3. Use the navigation bar to move between `index.html`, `about.html`, and `contact.html`.
 
 Files
 
