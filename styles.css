@@ -1144,4 +1144,18 @@ textarea {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Make the entire gallery image clickable */
+.gallery-image-wrapper {
+  cursor: pointer;
+}
+
+.gallery-image-wrapper:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.gallery-view-btn {
+  pointer-events: none;
+}
 }
