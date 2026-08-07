@@ -164,10 +164,19 @@ document.addEventListener('DOMContentLoaded', function() {
     items.forEach(item => {
       const galleryItem = document.createElement('article');
       galleryItem.className = 'gallery-item';
-      // Display first image from the images array
+      // build responsive srcset for the first image if it's a local image
+      const firstImage = item.images[0] || '';
+      let thumbSrc = firstImage;
+      let srcset = '';
+      if(firstImage.startsWith('images/')) {
+        const base = firstImage.replace(/\.[^/.]+$/, '');
+        thumbSrc = `${base}-400.jpg`;
+        srcset = `${base}-400.jpg 400w, ${base}-800.jpg 800w, ${base}-1200.jpg 1200w, ${base}-1600.jpg 1600w`;
+      }
+
       galleryItem.innerHTML = `
         <div class="gallery-image-wrapper">
-          <img src="${item.images[0]}" alt="${item.title}" class="gallery-image" loading="lazy">
+          <img src="${thumbSrc}" srcset="${srcset}" sizes="(max-width:600px) 100vw, (max-width:1100px) 50vw, 33vw" alt="${item.title}" class="gallery-image" loading="lazy">
           <div class="gallery-overlay">
             <button class="gallery-view-btn" data-id="${item.id}">View</button>
           </div>
@@ -196,6 +205,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightboxImage');
     const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxDesc = document.getElementById('lightboxDesc');
+    const lightboxClose = document.getElementById('lightboxClose');
     const lightboxPrev = document.getElementById('lightboxPrev');
     const lightboxNext = document.getElementById('lightboxNext');
     const imageCounter = document.getElementById('imageCounter');
@@ -213,11 +224,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function updateLightboxImage() {
       if(!currentItem) return;
-      
-      lightboxImage.src = currentItem.images[currentImageIndex];
+
+      // choose responsive lightbox source for local images
+      const rawPath = currentItem.images[currentImageIndex] || '';
+      if(rawPath.startsWith('images/')) {
+        const base = rawPath.replace(/\.[^/.]+$/, '');
+        lightboxImage.src = `${base}-1200.jpg`;
+      } else {
+        lightboxImage.src = rawPath;
+      }
+
       lightboxTitle.textContent = currentItem.title;
       lightboxDesc.textContent = currentItem.desc;
-      
+
       // Update image counter and button visibility
       if(currentItem.images.length > 1) {
         imageCounter.textContent = `${currentImageIndex + 1} / ${currentItem.images.length}`;
@@ -247,12 +266,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     lightboxNext.addEventListener('click', function() {
-      if(currentImageIndex < currentItem.images.length - 1) {
+      if(currentItem && currentImageIndex < currentItem.images.length - 1) {
         currentImageIndex++;
         updateLightboxImage();
-      }ightbox.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      });
+      }
     });
     
     lightboxClose.addEventListener('click', function() {
