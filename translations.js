@@ -14,7 +14,7 @@ const translations = {
     meet_maker: 'Gặp người sáng tạo',
     featured: 'Nổi bật',
     buttercup_title: 'Túi xách len',
-    buttercup_copy: 'Lớp da mềm với các chi tiết thêu tinh tế và nội thất rộng rãi.',
+    buttercup_copy: 'Túi xách len nổi bật với sự tỉ mỉ trong từng mũi móc và kiểu dáng thanh lịch.',
     
     // Collections
     collections: 'Bộ sưu tập',
