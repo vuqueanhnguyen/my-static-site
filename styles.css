@@ -123,14 +123,15 @@ img{max-width:100%;display:block}
   .card-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:720px){
+  html, body {overflow-x:hidden;}
   .container{padding:1rem}
   .site-header .container{flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.75rem;min-height:64px}
   .logo{font-size:1.5rem}
   .lang-switcher{margin-left:auto;border:none;padding:0;order:3;width:100%;justify-content:flex-end}
   .lang-switcher .lang-btn{width:36px;height:36px}
-  .nav{display:none;position:absolute;left:0;right:0;top:64px;flex-direction:column;background:var(--panel);padding:1rem;border-radius:0 0 24px 24px;box-shadow:0 24px 40px rgba(75,52,37,0.12);width:100%;max-width:none}
+  .nav{display:none;position:absolute;left:0;right:0;top:64px;flex-direction:column;background:var(--panel);padding:1rem 1rem 1.5rem;border-radius:0 0 24px 24px;box-shadow:0 24px 40px rgba(75,52,37,0.12);width:auto;max-width:none;box-sizing:border-box;overflow:hidden}
   .nav.open{display:flex}
-  .nav-link{width:100%;padding:.9rem 1rem;border-radius:16px}
+  .nav-link{width:100%;padding:.9rem 1rem;border-radius:16px;box-sizing:border-box}
   .nav-toggle{display:block;margin-left:0}
   .hero h1,.hero-about h1,.hero-contact h1{font-size:2.4rem}
   .hero-copy{font-size:1rem}
