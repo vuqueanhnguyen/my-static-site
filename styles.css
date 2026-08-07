@@ -22,6 +22,10 @@ img{max-width:100%;display:block}
 .nav-link{font-size:.95rem;font-weight:500;color:var(--muted);padding:.7rem 1rem;border-radius:999px;transition:background .3s,color .3s}
 .nav-link:hover,.nav-link.active{background:var(--accent-soft);color:var(--accent)}
 .nav-toggle{display:none;background:none;border:0;font-size:1.5rem;color:var(--text)}
+.lang-switcher{display:flex;gap:.3rem;margin-left:1rem;border-left:1px solid var(--border);padding-left:1rem}
+.lang-btn{background:none;border:1px solid var(--border);border-radius:50%;width:36px;height:36px;font-size:.8rem;font-weight:700;color:var(--muted);cursor:pointer;transition:all .3s}
+.lang-btn:hover{background:var(--accent-soft);color:var(--accent)}
+.lang-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 .hero-shop{padding:4rem 0;background:linear-gradient(180deg,rgba(244,239,232,1) 0%,rgba(255,251,249,1) 100%)}
 .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
 .eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.9rem}
@@ -79,9 +83,10 @@ img{max-width:100%;display:block}
 @media (max-width:720px){
   .container{padding:1rem}
   .site-header .container{flex-wrap:wrap}
+  .lang-switcher{margin-left:auto;border:none;padding:0;order:2}
   .nav{display:none;position:absolute;right:1rem;top:72px;flex-direction:column;background:var(--panel);padding:1rem;border-radius:20px;box-shadow:0 24px 40px rgba(75,52,37,0.12)}
   .nav.open{display:flex}
-  .nav-toggle{display:block;margin-left:auto}
+  .nav-toggle{display:block;margin-left:0}
   .hero h1,.hero-about h1,.hero-contact h1{font-size:2.8rem}
   .card-grid{grid-template-columns:1fr}
 }
