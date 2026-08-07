@@ -5,9 +5,10 @@ const handbagItems = [
     title: 'Buttercup Tote',
     desc: 'Soft leather finish with delicate embroidered details and a roomy interior.',
     images: [
-      'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1495121605193-b116b5b9c5d6?auto=format&fit=crop&w=800&q=80'
+      'images/Bag1_2.jpg',
+      'images/Bag1_3.jpg',
+      'images/Bag1_4.jpg',
+      'images/Bag1_5.jpg'
     ],
     tags: ['Tote', 'Summer', 'Featured']
   },
