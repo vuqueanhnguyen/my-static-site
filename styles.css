@@ -10,7 +10,10 @@
   --shadow: 0 24px 60px rgba(59, 43, 28, 0.12);
 }
 
-/* General */
+/* ========================================
+   General
+   ======================================== */
+
 * {
   box-sizing: border-box;
 }
@@ -21,9 +24,9 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, sans-serif;
-  background: var(--bg);
   color: var(--text);
+  background: var(--bg);
+  font-family: 'Inter', system-ui, sans-serif;
   line-height: 1.6;
 }
 
@@ -37,20 +40,30 @@ img {
   max-width: 100%;
 }
 
+button,
+input,
+textarea {
+  font: inherit;
+}
+
 .container {
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
 }
 
-/* Header */
+/* ========================================
+   Header
+   ======================================== */
+
 .site-header {
   position: sticky;
   top: 0;
   z-index: 20;
   background: rgba(255, 250, 248, 0.92);
-  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(232, 223, 213, 0.8);
+  backdrop-filter: blur(12px);
 }
 
 .site-header .container {
@@ -62,10 +75,10 @@ img {
 
 .logo {
   margin: 0;
+  color: var(--text);
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--text);
 }
 
 .nav {
@@ -77,11 +90,13 @@ img {
 
 .nav-link {
   padding: 0.7rem 1rem;
-  border-radius: 999px;
   color: var(--muted);
+  border-radius: 999px;
   font-size: 0.95rem;
   font-weight: 500;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    color 0.3s,
+    background 0.3s;
 }
 
 .nav-link:hover,
@@ -92,6 +107,7 @@ img {
 
 .nav-toggle {
   display: none;
+  padding: 0.25rem;
   color: var(--text);
   background: none;
   border: 0;
@@ -110,6 +126,7 @@ img {
 .lang-btn {
   width: 36px;
   height: 36px;
+  padding: 0;
   color: var(--muted);
   background: none;
   border: 1px solid var(--border);
@@ -131,15 +148,17 @@ img {
   border-color: var(--accent);
 }
 
-/* Home hero */
+/* ========================================
+   Home hero
+   ======================================== */
+
 .hero-shop {
   padding: 4rem 0;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(244, 239, 232, 1) 0%,
-      rgba(255, 251, 249, 1) 100%
-    );
+  background: linear-gradient(
+    180deg,
+    rgba(244, 239, 232, 1) 0%,
+    rgba(255, 251, 249, 1) 100%
+  );
 }
 
 .hero-grid {
@@ -149,8 +168,12 @@ img {
   gap: 2rem;
 }
 
+.hero-content {
+  min-width: 0;
+}
+
 .eyebrow {
-  margin-bottom: 0.9rem;
+  margin: 0 0 0.9rem;
   color: var(--accent);
   font-size: 0.85rem;
   font-weight: 700;
@@ -189,7 +212,9 @@ img {
   padding: 0.95rem 1.6rem;
   border-radius: 999px;
   font-weight: 600;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .button:hover {
@@ -207,13 +232,17 @@ img {
   border: 1px solid var(--accent);
 }
 
-/* Featured handbag card */
+/* ========================================
+   Featured handbag
+   ======================================== */
+
 .hero-product-card {
+  display: grid;
+  justify-self: end;
+  gap: 1.25rem;
   width: 100%;
   max-width: 420px;
-  justify-self: end;
-  display: grid;
-  gap: 1.25rem;
+  min-width: 0;
   padding: 1rem;
   overflow: hidden;
   background: var(--panel);
@@ -222,10 +251,7 @@ img {
   box-shadow: var(--shadow);
 }
 
-/*
-  This container controls the crop.
-  Change 4 / 5 to 1 / 1 if you want a square image.
-*/
+/* This container establishes the crop dimensions. */
 .featured-image-link {
   display: block;
   width: 100%;
@@ -236,20 +262,23 @@ img {
 }
 
 .featured-picture {
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
+/* Fill the container and crop without stretching. */
 .product-visual {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
+  max-width: none;
   height: 100%;
-
-  /* Preserve proportions and crop extra parts */
   object-fit: cover;
   object-position: center;
-
   transition: transform 0.45s ease;
 }
 
@@ -298,9 +327,12 @@ img {
   color: var(--text);
 }
 
-/* Collections */
+/* ========================================
+   Homepage collections
+   ======================================== */
+
 .section-intro {
-  padding: 2.5rem 0 4rem;
+  padding: 2.5rem 1.5rem 4rem;
 }
 
 .section-heading {
@@ -310,6 +342,7 @@ img {
 
 .section-heading h2 {
   margin: 0.5rem 0;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2.75rem;
   line-height: 1.05;
 }
@@ -317,21 +350,82 @@ img {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
   gap: 1.5rem;
 }
 
 .product-card {
-  padding: 1.75rem;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  padding: 1rem;
+  overflow: hidden;
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 28px;
   box-shadow: 0 18px 30px rgba(75, 52, 37, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 42px rgba(75, 52, 37, 0.14);
+}
+
+.product-card-link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+}
+
+/*
+  Homepage card image crop.
+  This is the same 4:5 crop used by the hero product.
+*/
+.product-image {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--accent-soft);
+  border-radius: 22px;
+}
+
+/* Apply the crop to actual images inside <picture>. */
+.product-image img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.04);
+}
+
+.product-card-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0.25rem 0.5rem 0.5rem;
 }
 
 .product-card h3 {
-  margin: 0.75rem 0 0.5rem;
+  margin: 0.9rem 0 0.5rem;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.6rem;
+  line-height: 1.15;
 }
 
 .product-card p {
@@ -339,40 +433,35 @@ img {
   color: var(--muted);
 }
 
-.product-image {
-  display: block;
-  aspect-ratio: 1 / 1;
-  border-radius: 24px;
-  background-position: center;
-  background-size: cover;
+.product-card-action {
+  display: inline-block;
+  width: max-content;
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--accent);
+  border-bottom: 1px solid currentColor;
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
-.product-image-1 {
-  background-image:
-    url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=700&q=80');
-}
+/* ========================================
+   Story
+   ======================================== */
 
-.product-image-2 {
-  background-image:
-    url('https://images.unsplash.com/photo-1495121605193-b116b5b9c5d6?auto=format&fit=crop&w=700&q=80');
-}
-
-.product-image-3 {
-  background-image:
-    url('https://images.unsplash.com/photo-1520962915462-2f277ed0b07a?auto=format&fit=crop&w=700&q=80');
-}
-
-/* Story */
 .story-section {
-  padding: 2rem 0 4rem;
+  padding: 2rem 1.5rem 4rem;
 }
 
 .story-copy h2 {
   margin: 0.4rem 0 1rem;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2.6rem;
 }
 
-/* About */
+/* ========================================
+   About page
+   ======================================== */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -407,28 +496,33 @@ img {
   color: var(--muted);
 }
 
-/* Interior page heroes */
+/* ========================================
+   Interior page heroes
+   ======================================== */
+
 .hero-about,
 .hero-contact {
   padding: 5rem 0 4rem;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(244, 239, 232, 0.8),
-      rgba(255, 251, 249, 1)
-    );
+  background: linear-gradient(
+    180deg,
+    rgba(244, 239, 232, 0.8),
+    rgba(255, 251, 249, 1)
+  );
 }
 
 .hero-inner {
   max-width: 720px;
 }
 
-/* Contact */
+/* ========================================
+   Contact page
+   ======================================== */
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 2rem;
-  padding: 3rem 0;
+  padding: 3rem 1.5rem;
 }
 
 .contact-details,
@@ -466,16 +560,20 @@ img {
 }
 
 .contact-form-card button {
-  width: min-content;
+  width: max-content;
   padding: 0.95rem 1.8rem;
   color: #ffffff;
   background: var(--accent);
+  border: 0;
   border-radius: 999px;
   font-weight: 700;
   cursor: pointer;
 }
 
-/* Footer */
+/* ========================================
+   Footer
+   ======================================== */
+
 .site-footer {
   padding: 3rem 0;
   color: var(--muted);
@@ -495,19 +593,21 @@ img {
   font-size: 1.5rem;
 }
 
-/* Gallery */
+/* ========================================
+   Gallery page
+   ======================================== */
+
 .hero-gallery {
   padding: 5rem 0 4rem;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(244, 239, 232, 0.8),
-      rgba(255, 251, 249, 1)
-    );
+  background: linear-gradient(
+    180deg,
+    rgba(244, 239, 232, 0.8),
+    rgba(255, 251, 249, 1)
+  );
 }
 
 .gallery-section {
-  padding: 2.5rem 0 4rem;
+  padding: 2.5rem 1.5rem 4rem;
 }
 
 .product-tabs-nav {
@@ -545,6 +645,7 @@ img {
 }
 
 .gallery-item {
+  min-width: 0;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -555,16 +656,20 @@ img {
 
 .gallery-image-wrapper {
   position: relative;
+  width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
+  background: var(--accent-soft);
   border-radius: 20px;
 }
 
 .gallery-image {
   display: block;
   width: 100%;
+  max-width: none;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .gallery-overlay {
@@ -591,7 +696,9 @@ img {
   border-radius: 999px;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s, background 0.2s;
+  transition:
+    transform 0.2s,
+    background 0.2s;
 }
 
 .gallery-view-btn:hover {
@@ -634,7 +741,10 @@ img {
   font-weight: 600;
 }
 
-/* Lightbox */
+/* ========================================
+   Lightbox
+   ======================================== */
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -642,6 +752,7 @@ img {
   display: none;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
   opacity: 0;
   background: rgba(0, 0, 0, 0.95);
   transition: opacity 0.3s;
@@ -657,13 +768,22 @@ img {
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 1.5rem;
-  max-width: 90vw;
+  width: min(90vw, 1000px);
   max-height: 90vh;
   animation: slideUp 0.3s ease;
 }
 
+.lightbox-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .lightbox-content img {
-  width: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
   max-height: 60vh;
   object-fit: contain;
   border-radius: 20px;
@@ -688,7 +808,7 @@ img {
 
 .lightbox-close {
   position: absolute;
-  top: -40px;
+  top: -45px;
   right: 0;
   display: flex;
   align-items: center;
@@ -706,13 +826,6 @@ img {
 
 .lightbox-close:hover {
   transform: scale(1.1);
-}
-
-.lightbox-image-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .lightbox-nav {
@@ -766,7 +879,6 @@ img {
   color: #ffffff;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
-  font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
 }
 
@@ -782,7 +894,10 @@ img {
   }
 }
 
-/* Tablet */
+/* ========================================
+   Tablet
+   ======================================== */
+
 @media (max-width: 1100px) {
   .gallery-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -797,14 +912,22 @@ img {
   }
 
   .hero-product-card {
+    justify-self: center;
     width: 100%;
     max-width: 460px;
-    justify-self: center;
     margin: 1rem auto 0;
   }
 
   .card-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-card {
+    padding: 0.85rem;
+  }
+
+  .product-image {
+    border-radius: 20px;
   }
 
   .gallery-grid {
@@ -813,7 +936,10 @@ img {
   }
 }
 
-/* Mobile */
+/* ========================================
+   Mobile
+   ======================================== */
+
 @media (max-width: 720px) {
   html,
   body {
@@ -838,22 +964,15 @@ img {
 
   .nav-toggle {
     display: block;
-    margin-left: 0;
   }
 
   .lang-switcher {
     order: 3;
-    display: flex;
     justify-content: flex-end;
     width: 100%;
     margin-left: auto;
     padding: 0;
     border: none;
-  }
-
-  .lang-switcher .lang-btn {
-    width: 36px;
-    height: 36px;
   }
 
   .nav {
@@ -864,7 +983,7 @@ img {
     display: none;
     flex-direction: column;
     width: auto;
-    max-width: none;
+    margin-left: 0;
     padding: 1rem 1rem 1.5rem;
     overflow: hidden;
     background: var(--panel);
@@ -897,9 +1016,9 @@ img {
   }
 
   .hero-product-card {
+    justify-self: center;
     width: 100%;
     max-width: 420px;
-    justify-self: center;
     padding: 0.75rem;
     border-radius: 24px;
   }
@@ -916,8 +1035,45 @@ img {
     font-size: 1.65rem;
   }
 
+  .section-intro,
+  .story-section,
+  .contact-grid,
+  .gallery-section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .section-heading h2 {
+    font-size: 2.2rem;
+  }
+
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0.75rem;
+    border-radius: 24px;
+  }
+
+  .product-image {
+    aspect-ratio: 4 / 5;
+    border-radius: 18px;
+  }
+
+  .product-card-copy {
+    padding: 0.25rem 0.5rem 0.65rem;
+  }
+
+  .product-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .story-copy h2 {
+    font-size: 2.2rem;
   }
 
   .hero-gallery {
@@ -958,8 +1114,12 @@ img {
     font-size: 0.7rem;
   }
 
+  .lightbox {
+    padding: 1rem;
+  }
+
   .lightbox-content {
-    max-width: 95vw;
+    width: 95vw;
     max-height: 95vh;
   }
 
