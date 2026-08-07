@@ -124,10 +124,13 @@ img{max-width:100%;display:block}
 }
 @media (max-width:720px){
   .container{padding:1rem}
-  .site-header .container{flex-wrap:wrap;justify-content:space-between}
-  .lang-switcher{margin-left:auto;border:none;padding:0;order:2}
-  .nav{display:none;position:absolute;right:1rem;top:72px;flex-direction:column;background:var(--panel);padding:1rem;border-radius:20px;box-shadow:0 24px 40px rgba(75,52,37,0.12);width:calc(100% - 2rem);max-width:320px}
+  .site-header .container{flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.75rem;min-height:64px}
+  .logo{font-size:1.5rem}
+  .lang-switcher{margin-left:auto;border:none;padding:0;order:3;width:100%;justify-content:flex-end}
+  .lang-switcher .lang-btn{width:36px;height:36px}
+  .nav{display:none;position:absolute;left:0;right:0;top:64px;flex-direction:column;background:var(--panel);padding:1rem;border-radius:0 0 24px 24px;box-shadow:0 24px 40px rgba(75,52,37,0.12);width:100%;max-width:none}
   .nav.open{display:flex}
+  .nav-link{width:100%;padding:.9rem 1rem;border-radius:16px}
   .nav-toggle{display:block;margin-left:0}
   .hero h1,.hero-about h1,.hero-contact h1{font-size:2.4rem}
   .hero-copy{font-size:1rem}
