@@ -2,7 +2,7 @@
 const handbagItems = [
   {
     id: 1,
-    title: 'Túi xách len',
+    title: 'handmade crochet bag',
     desc: 'Túi xách len nổi bật với sự tỉ mỉ trong từng mũi móc và kiểu dáng thanh lịch.',
     images: [
       'images/Bag1_1.jpg',

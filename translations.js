@@ -13,7 +13,7 @@ const translations = {
     shop_inquiry: 'Yêu cầu mua hàng',
     meet_maker: 'Gặp người sáng tạo',
     featured: 'Nổi bật',
-    buttercup_title: 'Túi Buttercup',
+    buttercup_title: 'Túi xách len',
     buttercup_copy: 'Lớp da mềm với các chi tiết thêu tinh tế và nội thất rộng rãi.',
     
     // Collections
@@ -91,7 +91,7 @@ const translations = {
     shop_inquiry: 'Shop Inquiry',
     meet_maker: 'Meet the Maker',
     featured: 'Featured',
-    buttercup_title: 'Buttercup Tote',
+    buttercup_title: 'handmade crochet bag',
     buttercup_copy: 'Soft leather finish with delicate embroidered details and a roomy interior.',
     
     // Collections
