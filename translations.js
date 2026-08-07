@@ -1,164 +1,244 @@
 const translations = {
   vi: {
-    // Header & Nav
+    // Header and navigation
     home: 'Trang chủ',
-    about: 'Về chúng tôi',
-    gallery: 'Thư viện',
+    about: 'Giới thiệu',
+    gallery: 'Bộ sưu tập',
     contact: 'Liên hệ',
-    
-    // Home Page
-    tagline: 'Handmade with care',
-    hero_title: 'Những chiếc túi xách và mũ đẹp cho mỗi câu chuyện.',
-    hero_copy: 'Mỗi chiếc túi xách và mũ được làm thủ công bằng những vật liệu cao cấp, kết cấu mềm mAi, và những chi tiết suy nghĩ kỹ lưỡng — hoàn hảo cho cuộc sống hàng ngày, làm quà tặng, hoặc những dịp đặc biệt.',
-    shop_inquiry: 'Yêu cầu mua hàng',
-    meet_maker: 'Gặp người sáng tạo',
+
+    // Home page hero
+    tagline: 'Được làm thủ công với sự chăm chút',
+    hero_title: 'Những chiếc túi và mũ xinh đẹp cho mọi câu chuyện.',
+    hero_copy:
+      'Mỗi chiếc túi và mũ đều được làm thủ công từ vật liệu cao cấp, kết cấu mềm mại và những chi tiết tinh tế — phù hợp để sử dụng hằng ngày, làm quà tặng hoặc dành cho những dịp đặc biệt.',
+    shop_inquiry: 'Liên hệ mua hàng',
+    meet_maker: 'Gặp gỡ người sáng tạo',
     featured: 'Nổi bật',
-    buttercup_title: 'Túi đan len 1',
-    buttercup_copy: 'Túi đan len nổi bật với sự tỉ mỉ trong từng mũi móc và kiểu dáng thanh lịch.',
-    handmade_crochet_bag: "Túi móc thủ công",
+
+    // Featured handbag
+    handmade_crochet_bag: 'Túi móc thủ công',
     handmade_crochet_bag_copy:
-      "Chiếc túi nổi bật với sự chăm chút tỉ mỉ trong từng mũi móc cùng thiết kế thanh lịch.",
-    view_in_gallery: "Xem trong bộ sưu tập",
-    
+      'Chiếc túi nổi bật với sự chăm chút tỉ mỉ trong từng mũi móc cùng thiết kế thanh lịch.',
+
+    // Second homepage handbag
+    handmade_crochet_bag_2: 'Túi móc thủ công 2',
+    handmade_crochet_bag_2_copy:
+      'Đường nét chắc chắn và các chi tiết tinh tế tạo nên một chiếc túi thanh lịch để sử dụng hằng ngày.',
+
+    // Gallery links
+    view_in_gallery: 'Xem trong bộ sưu tập',
+    view_full_gallery: 'Xem toàn bộ bộ sưu tập',
+
+    // Legacy featured-product keys
+    // These are retained in case an older page still uses them.
+    buttercup_title: 'Túi móc thủ công 1',
+    buttercup_copy:
+      'Chiếc túi nổi bật với sự tỉ mỉ trong từng mũi móc và kiểu dáng thanh lịch.',
+
     // Collections
     collections: 'Bộ sưu tập',
-    collections_title: 'Những chiếc túi xách và mũ được làm thủ công cho mọi dịp.',
-    classic_satchel: 'Túi đan len 2',
-    classic_satchel_copy: 'Đường viền cấu trúc và phần cứng tinh tế làm cho chiếc túi này trở thành người bạn đi làm hoàn hảo hàng ngày.',
-    woven_crossbody: 'Túi đan len 3',
-    woven_crossbody_copy: 'Nhẹ, thanh lịch, và hoàn hảo để mang theo những thứ cần thiết với sự thoải mái và quyến rũ.',
-    evening_clutch: 'Túi đan len 4',
-    evening_clutch_copy: 'Các chi tiết khâu tay và các đường viền tinh chỉnh dành cho những đêm đặc biệt.',
-    
-    // Story Section
+    collections_title:
+      'Những chiếc túi thủ công dành cho phong cách vượt thời gian.',
+
+    // Legacy collection product 1
+    classic_satchel: 'Túi móc thủ công 2',
+    classic_satchel_copy:
+      'Đường nét chắc chắn và các chi tiết tinh tế tạo nên một chiếc túi thanh lịch để sử dụng hằng ngày.',
+
+    // Collection product 3
+    woven_crossbody: 'Túi móc thủ công 3',
+    woven_crossbody_copy:
+      'Nhẹ nhàng, thanh lịch và hoàn hảo để mang theo những vật dụng cần thiết một cách thoải mái.',
+
+    // Legacy collection product 4
+    evening_clutch: 'Túi móc thủ công 4',
+    evening_clutch_copy:
+      'Các chi tiết được làm thủ công cùng kiểu dáng tinh tế, phù hợp cho những dịp đặc biệt.',
+
+    // Story section
     our_story: 'Câu chuyện của chúng tôi',
-    story_title: 'Từ một không gian nhỏ đến tủ quần áo của bạn.',
-    story_copy: 'Le Petit Sac bắt đầu như một dự án đam mê trong việc tạo ra những chiếc túi xách đẹp, độc nhất vô nhị cho những người đánh giá cao thiết kế suy nghĩ kỹ lưỡng và chất lượng. Mỗi chiếc đều được làm chậm chạp và cẩn thận, với tình yêu thương trong mỗi đường khâu.',
-    
-    // About Page
+    story_title: 'Từ một không gian nhỏ đến tủ đồ của bạn.',
+    story_copy:
+      'Le Petit Sac bắt đầu từ niềm đam mê tạo ra những chiếc túi xinh đẹp và độc đáo dành cho những người trân trọng thiết kế tinh tế cùng chất lượng bền lâu. Mỗi sản phẩm đều được làm chậm rãi, cẩn thận và chứa đựng tình yêu trong từng đường kim mũi chỉ.',
+
+    // About page
     about_tagline: 'Câu chuyện của chúng tôi',
-    about_title: 'Những chiếc túi xách được làm bằng tay lấy cảm hứng từ những khoảnh khắc hàng ngày.',
-    about_copy: 'Mỗi chiếc túi được làm trong một studio nhỏ với những vải vóc cao cấp, các chi tiết nhẹ nhàng, và sự tận tâm với chất lượng mà cảm thấy cá nhân.',
-    
-    // About - Meet the Maker
-    meet_maker_title: 'Gặp người sáng tạo',
-    meet_maker_copy: 'Mẹ tôi bắt đầu tạo ra những chiếc túi xách vì cô yêu thích biến những vật liệu đơn giản thành những phụ kiện chủ đích. Các thiết kế của cô kết hợp sự mềm mại, hình thức, và chức năng để mỗi chiếc túi cảm thấy đặc biệt.',
-    meet_maker_copy2: 'Cô ấy tìm kiếm các loại vải bền vững, khâu tay mỗi đường may, và hoàn thiện mỗi mảnh bằng sự chăm sóc đến từ việc làm điều gì đó cho ai đó mà cô yêu thương.',
-    
-    // About Values
-    one_of_kind: 'Độc nhất vô nhị',
-    one_of_kind_copy: 'Mỗi chiếc túi là độc nhất, được làm với số lượng nhỏ với sự chú ý đến từng chi tiết.',
-    thoughtful_materials: 'Những vật liệu suy nghĩ kỹ',
-    thoughtful_materials_copy: 'Những kết cấu tự nhiên và những bảng màu mềm tạo ra một cái nhìn vượt thời gian.',
-    made_to_last: 'Làm để tồn tại',
-    made_to_last_copy: 'Những công nghệ bền bỉ có nghĩa là chiếc túi xách của bạn có thể được mặc lại và lại.',
-    
-    // Contact Page
+    about_title:
+      'Những chiếc túi thủ công được lấy cảm hứng từ những khoảnh khắc đời thường.',
+    about_copy:
+      'Mỗi chiếc túi được làm trong một xưởng nhỏ bằng vật liệu cao cấp, những chi tiết tinh tế và sự tận tâm để tạo nên một sản phẩm mang dấu ấn riêng.',
+
+    // About page: Meet the Maker
+    meet_maker_title: 'Gặp gỡ người sáng tạo',
+    meet_maker_copy:
+      'Mẹ tôi bắt đầu làm túi xách vì bà yêu thích việc biến những vật liệu đơn giản thành các phụ kiện đầy ý nghĩa. Thiết kế của bà kết hợp sự mềm mại, kiểu dáng và tính tiện dụng để mỗi chiếc túi đều trở nên đặc biệt.',
+    meet_maker_copy2:
+      'Bà lựa chọn các loại vật liệu bền vững, chăm chút từng đường may và hoàn thiện mỗi sản phẩm bằng sự tận tâm như khi làm một món quà dành cho người mình yêu quý.',
+
+    // About page: Values
+    one_of_kind: 'Độc đáo',
+    one_of_kind_copy:
+      'Mỗi chiếc túi đều mang nét riêng, được làm với số lượng nhỏ và chăm chút đến từng chi tiết.',
+    thoughtful_materials: 'Vật liệu được tuyển chọn kỹ lưỡng',
+    thoughtful_materials_copy:
+      'Kết cấu tự nhiên và bảng màu nhẹ nhàng tạo nên vẻ đẹp vượt thời gian.',
+    made_to_last: 'Bền đẹp theo thời gian',
+    made_to_last_copy:
+      'Kỹ thuật thủ công bền chắc giúp chiếc túi của bạn có thể được sử dụng lâu dài.',
+
+    // Contact page
     contact_tagline: 'Hãy kết nối',
-    contact_title: 'Yêu cầu túi xách tùy chỉnh và đơn hàng.',
-    contact_copy: 'Liên hệ để yêu cầu một thiết kế mới, màu sắc tùy chỉnh, hoặc một món quà xây dựng tay cho ai đó đặc biệt.',
-    
-    // Contact Form
-    say_hello: 'Nói xin chào',
-    respond_time: 'Chúng tôi sẽ phản hồi trong 1-2 ngày làm việc.',
+    contact_title: 'Liên hệ đặt hàng và yêu cầu thiết kế túi riêng.',
+    contact_copy:
+      'Hãy liên hệ để yêu cầu một thiết kế mới, lựa chọn màu sắc riêng hoặc đặt một món quà thủ công dành cho người đặc biệt.',
+
+    // Contact details
+    say_hello: 'Hãy gửi lời chào',
+    respond_time:
+      'Chúng tôi sẽ phản hồi trong vòng 1–2 ngày làm việc.',
     email_label: 'Email',
     instagram_label: 'Instagram',
-    location_label: 'Vị trí',
-    
-    // Contact Form Fields
+    location_label: 'Địa điểm',
+
+    // Contact form fields
     name_label: 'Tên',
     message_label: 'Tin nhắn',
     send_message: 'Gửi tin nhắn',
-    
+
     // Footer
-    footer_tagline: 'Được thiết kế để mang những khoảnh khắc của bạn một cách đẹp.',
-    footer_description: 'Những chiếc túi xách được làm thủ công cho sự sang trọng hàng ngày.',
-    
-    // Gallery Page
-    gallery_tagline: 'Thư viện trưng bày',
-    gallery_title: 'Những chiếc túi xách và mũ được làm bằng tay đang hoạt động.',
-    gallery_copy: 'Khám phá các bộ sưu tập các chiếc túi xách và mũ được làm thủ công đẹp mắt. Nhấp vào bất kỳ hình ảnh nào để xem chi tiết đầy đủ.',
+    footer_tagline:
+      'Được thiết kế để đồng hành cùng những khoảnh khắc đẹp của bạn.',
+    footer_description:
+      'Những chiếc túi thủ công mang đến vẻ thanh lịch mỗi ngày.',
+    follow_us: 'Theo dõi chúng tôi',
+
+    // Gallery page
+    gallery_tagline: 'Bộ sưu tập hình ảnh',
+    gallery_title: 'Khám phá những chiếc túi và mũ thủ công.',
+    gallery_copy:
+      'Khám phá bộ sưu tập túi và mũ thủ công được chế tác tỉ mỉ. Nhấp vào bất kỳ hình ảnh nào để xem đầy đủ chi tiết.',
     handbags: 'Túi xách',
     hats: 'Mũ'
   },
+
   en: {
-    // Header & Nav
+    // Header and navigation
     home: 'Home',
     about: 'About',
     gallery: 'Gallery',
     contact: 'Contact',
-    
-    // Home Page
+
+    // Home page hero
     tagline: 'Handmade with care',
     hero_title: 'Beautiful bags and hats for every story.',
-    hero_copy: 'Each handbag and hat is crafted by hand using premium materials, soft textures, and thoughtful details — perfect for daily life, gifting, or a special occasion.',
+    hero_copy:
+      'Each handbag and hat is crafted by hand using premium materials, soft textures, and thoughtful details — perfect for daily life, gifting, or a special occasion.',
     shop_inquiry: 'Shop Inquiry',
     meet_maker: 'Meet the Maker',
     featured: 'Featured',
-    buttercup_title: 'Handmade crochet bag 1',
-    buttercup_copy: 'The handbag stands out for the meticulous attention to detail in every crochet stitch and its elegant design.',
-    handmade_crochet_bag: "Handmade Crochet Bag",
+
+    // Featured handbag
+    handmade_crochet_bag: 'Handmade Crochet Bag',
     handmade_crochet_bag_copy:
-      "The handbag stands out for the meticulous attention to detail in every crochet stitch and its elegant design.",
-    view_in_gallery: "View in Gallery",
+      'The handbag stands out for the meticulous attention to detail in every crochet stitch and its elegant design.',
+
+    // Second homepage handbag
+    handmade_crochet_bag_2: 'Handmade Crochet Bag 2',
+    handmade_crochet_bag_2_copy:
+      'Structured lines and subtle details make this bag a polished everyday companion.',
+
+    // Gallery links
+    view_in_gallery: 'View in Gallery',
+    view_full_gallery: 'View Full Gallery',
+
+    // Legacy featured-product keys
+    // These are retained in case an older page still uses them.
+    buttercup_title: 'Handmade Crochet Bag 1',
+    buttercup_copy:
+      'The handbag stands out for the meticulous attention to detail in every crochet stitch and its elegant design.',
+
     // Collections
     collections: 'Collections',
-    collections_title: 'Handmade handbags and hats for every occasion.',
-    classic_satchel: 'Handmade crochet bag 2',
-    classic_satchel_copy: 'Structured lines and subtle hardware make this bag a polished everyday companion.',
-    woven_crossbody: 'Handmade crochet bag 3',
-    woven_crossbody_copy: 'Lightweight, elegant, and perfect for carrying essentials with comfort and charm.',
-    evening_clutch: 'Handmade crochet bag 4',
-    evening_clutch_copy: 'Hand-stitched details and a refined silhouette for special nights out.',
-    
-    // Story Section
+    collections_title:
+      'Handbags crafted for a timeless wardrobe.',
+
+    // Legacy collection product 1
+    classic_satchel: 'Handmade Crochet Bag 2',
+    classic_satchel_copy:
+      'Structured lines and subtle details make this bag a polished everyday companion.',
+
+    // Collection product 3
+    woven_crossbody: 'Handmade Crochet Bag 3',
+    woven_crossbody_copy:
+      'Lightweight, elegant, and perfect for carrying essentials with comfort and charm.',
+
+    // Legacy collection product 4
+    evening_clutch: 'Handmade Crochet Bag 4',
+    evening_clutch_copy:
+      'Handcrafted details and a refined silhouette for special occasions.',
+
+    // Story section
     our_story: 'Our Story',
     story_title: 'From a small workspace to your wardrobe.',
-    story_copy: 'Le Petit Sac began as a passion project for crafting beautiful, one-of-a-kind handbags for people who value thoughtful design and quality. Every piece is made slowly and carefully, with love in every stitch.',
-    
-    // About Page
-    about_tagline: 'Our story',
-    about_title: 'Handcrafted handbags inspired by everyday moments.',
-    about_copy: 'Every bag is made in a small studio with premium fabrics, gentle details, and a dedication to quality that feels personal.',
-    
-    // About - Meet the Maker
-    meet_maker_title: 'Meet the maker',
-    meet_maker_copy: 'My mom started creating handbags because she loves turning simple materials into thoughtful accessories. Her designs blend softness, form, and functionality so every bag feels special.',
-    meet_maker_copy2: 'She sources sustainable fabric, hand-stitches each seam, and finishes every piece with a care that comes from making something for someone she cares about.',
-    
-    // About Values
-    one_of_kind: 'One-of-a-kind',
-    one_of_kind_copy: 'Each bag is unique, made in small batches with attention to detail.',
-    thoughtful_materials: 'Thoughtful materials',
-    thoughtful_materials_copy: 'Natural textures and soft palettes create a timeless look.',
-    made_to_last: 'Made to last',
-    made_to_last_copy: 'Durable craftsmanship means your handbag can be worn again and again.',
-    
-    // Contact Page
-    contact_tagline: 'Let\'s connect',
+    story_copy:
+      'Le Petit Sac began as a passion project for crafting beautiful, one-of-a-kind handbags for people who value thoughtful design and quality. Every piece is made slowly and carefully, with love in every stitch.',
+
+    // About page
+    about_tagline: 'Our Story',
+    about_title:
+      'Handcrafted handbags inspired by everyday moments.',
+    about_copy:
+      'Every bag is made in a small studio with premium materials, gentle details, and a dedication to quality that feels personal.',
+
+    // About page: Meet the Maker
+    meet_maker_title: 'Meet the Maker',
+    meet_maker_copy:
+      'My mom started creating handbags because she loves turning simple materials into thoughtful accessories. Her designs blend softness, form, and functionality so every bag feels special.',
+    meet_maker_copy2:
+      'She sources sustainable materials, hand-stitches each seam, and finishes every piece with the care that comes from making something for someone she loves.',
+
+    // About page: Values
+    one_of_kind: 'One of a Kind',
+    one_of_kind_copy:
+      'Each bag is unique, made in small batches with attention to every detail.',
+    thoughtful_materials: 'Thoughtful Materials',
+    thoughtful_materials_copy:
+      'Natural textures and soft color palettes create a timeless look.',
+    made_to_last: 'Made to Last',
+    made_to_last_copy:
+      'Durable craftsmanship means your handbag can be enjoyed again and again.',
+
+    // Contact page
+    contact_tagline: 'Let\'s Connect',
     contact_title: 'Custom handbag inquiries and orders.',
-    contact_copy: 'Reach out to request a new design, custom colors, or a handcrafted gift for someone special.',
-    
-    // Contact Form
-    say_hello: 'Say hello',
-    respond_time: 'We respond within 1-2 business days.',
+    contact_copy:
+      'Reach out to request a new design, custom colors, or a handcrafted gift for someone special.',
+
+    // Contact details
+    say_hello: 'Say Hello',
+    respond_time:
+      'We respond within 1–2 business days.',
     email_label: 'Email',
     instagram_label: 'Instagram',
     location_label: 'Location',
-    
-    // Contact Form Fields
+
+    // Contact form fields
     name_label: 'Name',
     message_label: 'Message',
     send_message: 'Send Message',
-    
+
     // Footer
-    footer_tagline: 'Designed to carry your moments beautifully.',
-    footer_description: 'Beautiful handmade bags for your everyday story.',
-    
-    // Gallery Page
+    footer_tagline:
+      'Designed to carry your moments beautifully.',
+    footer_description:
+      'Beautiful handmade bags for your everyday story.',
+    follow_us: 'Follow Us',
+
+    // Gallery page
     gallery_tagline: 'Visual Gallery',
     gallery_title: 'Handmade bags and hats in action.',
-    gallery_copy: 'Explore our collections of beautifully crafted handbags and hats. Click any image to view full details.',
+    gallery_copy:
+      'Explore our collections of beautifully crafted handbags and hats. Click any image to view full details.',
     handbags: 'Handbags',
     hats: 'Hats'
   }
