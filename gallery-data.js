@@ -2,13 +2,13 @@
 const handbagItems = [
   {
     id: 1,
-    title: 'Buttercup Tote',
-    desc: 'Soft leather finish with delicate embroidered details and a roomy interior.',
+    title: 'Túi xách len',
+    desc: 'Túi xách len nổi bật với sự tỉ mỉ trong từng mũi móc và kiểu dáng thanh lịch.',
     images: [
+      'images/Bag1_1.jpg',
       'images/Bag1_2.jpg',
       'images/Bag1_3.jpg',
-      'images/Bag1_4.jpg',
-      'images/Bag1_5.jpg'
+      'images/Bag1_4.jpg'
     ],
     tags: ['Tote', 'Summer', 'Featured']
   },
@@ -164,19 +164,18 @@ document.addEventListener('DOMContentLoaded', function() {
     items.forEach(item => {
       const galleryItem = document.createElement('article');
       galleryItem.className = 'gallery-item';
-      // build responsive srcset for the first image if it's a local image
+      // use the original uploaded image as the primary src to avoid missing resized filenames
       const firstImage = item.images[0] || '';
-      let thumbSrc = firstImage;
+      // build srcset hints (optional) but keep original image as fallback
       let srcset = '';
       if(firstImage.startsWith('images/')) {
         const base = firstImage.replace(/\.[^/.]+$/, '');
-        thumbSrc = `${base}-400.jpg`;
         srcset = `${base}-400.jpg 400w, ${base}-800.jpg 800w, ${base}-1200.jpg 1200w, ${base}-1600.jpg 1600w`;
       }
 
       galleryItem.innerHTML = `
         <div class="gallery-image-wrapper">
-          <img src="${thumbSrc}" srcset="${srcset}" sizes="(max-width:600px) 100vw, (max-width:1100px) 50vw, 33vw" alt="${item.title}" class="gallery-image" loading="lazy">
+          <img src="${firstImage}" srcset="${srcset}" sizes="(max-width:600px) 100vw, (max-width:1100px) 50vw, 33vw" alt="${item.title}" class="gallery-image" loading="lazy">
           <div class="gallery-overlay">
             <button class="gallery-view-btn" data-id="${item.id}">View</button>
           </div>
@@ -225,14 +224,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateLightboxImage() {
       if(!currentItem) return;
 
-      // choose responsive lightbox source for local images
+      // load the original uploaded image as the lightbox source
       const rawPath = currentItem.images[currentImageIndex] || '';
-      if(rawPath.startsWith('images/')) {
-        const base = rawPath.replace(/\.[^/.]+$/, '');
-        lightboxImage.src = `${base}-1200.jpg`;
-      } else {
-        lightboxImage.src = rawPath;
-      }
+      lightboxImage.src = rawPath;
+      // remove any srcset to avoid browser selecting a missing file
+      lightboxImage.removeAttribute('srcset');
 
       lightboxTitle.textContent = currentItem.title;
       lightboxDesc.textContent = currentItem.desc;
