@@ -5,7 +5,7 @@ const handbagItems = [
     title: 'Handmade crochet bag',
     desc: 'The handbag stands out for the meticulous attention to detail in every crochet stitch and its elegant design',
     images: [
-      'images/Bag1_1-400.jpg',
+      'images/Bag1_1.jpg',
       'images/Bag1_2.jpg',
       'images/Bag1_3.jpg',
       'images/Bag1_4.jpg'
@@ -17,7 +17,7 @@ const handbagItems = [
     title: 'Handmade crochet bag 2',
     desc: 'Structured lines and subtle hardware make this bag a polished everyday companion.',
     images: [
-      'images/Bag2_1-400.jpg',
+      'images/Bag2_1.jpg',
       'images/Bag2_2.jpg',
       'images/Bag2_3.jpg',
       'images/Bag2_4.jpg'
@@ -169,13 +169,13 @@ document.addEventListener('DOMContentLoaded', function() {
       // use the original uploaded image as the primary src to avoid missing resized filenames
       const firstImage = item.images[0] || '';
       // build srcset hints (optional) but keep original image as fallback
-      /*
+      
       let srcset = '';
       if(firstImage.startsWith('images/')) {
         const base = firstImage.replace(/\.[^/.]+$/, '');
         srcset = `${base}-400.jpg 400w, ${base}-800.jpg 800w, ${base}-1200.jpg 1200w, ${base}-1600.jpg 1600w`;
       }
-      */
+      
       galleryItem.innerHTML = `
         <div class="gallery-image-wrapper">
           <img src="${firstImage}" srcset="${srcset}" sizes="(max-width:600px) 100vw, (max-width:1100px) 50vw, 33vw" alt="${item.title}" class="gallery-image" loading="lazy">
