@@ -1,57 +1,112 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+
     <title>Le Petit Sac — Handmade Handbags</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    >
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="styles.css">
     <script src="translations.js"></script>
   </head>
+
   <body>
+    <!-- Header -->
     <header class="site-header">
       <div class="container header-row">
-        <a class="logo" href="index.html">Le Petit Sac</a>
-        <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
-        <nav id="mainNav" class="nav" aria-label="Primary navigation">
-          <a class="nav-link" href="index.html" data-i18n="home">Home</a>
-          <a class="nav-link" href="about.html" data-i18n="about">About</a>
-          <a class="nav-link" href="gallery.html" data-i18n="gallery">Gallery</a>
-          <a class="nav-link" href="contact.html" data-i18n="contact">Contact</a>
+        <a class="logo" href="index.html">
+          Le Petit Sac
+        </a>
+
+        <button
+          id="navToggle"
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="mainNav"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <nav
+          id="mainNav"
+          class="nav"
+          aria-label="Primary navigation"
+        >
+          <a
+            class="nav-link active"
+            href="index.html"
+            data-i18n="home"
+          >
+            Home
+          </a>
+
+          <a
+            class="nav-link"
+            href="about.html"
+            data-i18n="about"
+          >
+            About
+          </a>
+
+          <a
+            class="nav-link"
+            href="gallery.html"
+            data-i18n="gallery"
+          >
+            Gallery
+          </a>
+
+          <a
+            class="nav-link"
+            href="contact.html"
+            data-i18n="contact"
+          >
+            Contact
+          </a>
         </nav>
-        <div class="lang-switcher">
-          <button class="lang-btn" data-lang="vi">VI</button>
-          <button class="lang-btn" data-lang="en">EN</button>
+
+        <div
+          class="lang-switcher"
+          aria-label="Language selection"
+        >
+          <button
+            class="lang-btn"
+            type="button"
+            data-lang="vi"
+          >
+            VI
+          </button>
+
+          <button
+            class="lang-btn"
+            type="button"
+            data-lang="en"
+          >
+            EN
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <!--
-      <section class="hero hero-shop">
-        <div class="container hero-grid">
-          <div>
-            <p class="eyebrow" data-i18n="tagline">Handmade with care</p>
-            <h1 data-i18n="hero_title">Beautiful bags and hats for every story.</h1>
-            <p class="hero-copy" data-i18n="hero_copy">Each handbag and hat is crafted by hand using premium materials, soft textures, and thoughtful details — perfect for daily life, gifting, or a special occasion.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="contact.html" data-i18n="shop_inquiry">Shop Inquiry</a>
-              <a class="button button-secondary" href="about.html" data-i18n="meet_maker">Meet the Maker</a>
-            </div>
-          </div>
-          <div class="hero-product-card">
-            <div class="product-visual"></div>
-            <div class="product-copy">
-              <span class="product-tag" data-i18n="featured">Featured</span>
-              <h2 data-i18n="buttercup_title">Buttercup Tote</h2>
-              <p data-i18n="buttercup_copy">Soft leather finish with delicate embroidered details and a roomy interior.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
+      <!-- Hero -->
       <section class="hero hero-shop">
         <div class="container hero-grid">
           <div class="hero-content">
@@ -65,8 +120,8 @@
 
             <p class="hero-copy" data-i18n="hero_copy">
               Each handbag and hat is crafted by hand using premium
-              materials, soft textures, and thoughtful details — perfect
-              for daily life, gifting, or a special occasion.
+              materials, soft textures, and thoughtful details —
+              perfect for daily life, gifting, or a special occasion.
             </p>
 
             <div class="hero-actions">
@@ -88,6 +143,7 @@
             </div>
           </div>
 
+          <!-- Featured first handbag -->
           <article class="hero-product-card">
             <a
               class="featured-image-link"
@@ -103,7 +159,7 @@
                     images/Bag1_1-1200.webp 1200w,
                     images/Bag1_1-1600.webp 1600w
                   "
-                  sizes="(max-width: 800px) 100vw, 45vw"
+                  sizes="(max-width: 768px) calc(100vw - 2rem), 420px"
                 >
 
                 <img
@@ -115,7 +171,7 @@
                     images/Bag1_1-1200.jpg 1200w,
                     images/Bag1_1-1600.jpg 1600w
                   "
-                  sizes="(max-width: 800px) 100vw, 45vw"
+                  sizes="(max-width: 768px) calc(100vw - 2rem), 420px"
                   width="800"
                   height="1000"
                   alt="Handmade crochet bag"
@@ -126,7 +182,10 @@
             </a>
 
             <div class="product-copy">
-              <span class="product-tag" data-i18n="featured">
+              <span
+                class="product-tag"
+                data-i18n="featured"
+              >
                 Featured
               </span>
 
@@ -135,8 +194,9 @@
               </h2>
 
               <p data-i18n="handmade_crochet_bag_copy">
-                The handbag stands out for the meticulous attention to
-                detail in every crochet stitch and its elegant design.
+                The handbag stands out for the meticulous attention
+                to detail in every crochet stitch and its elegant
+                design.
               </p>
 
               <a
@@ -150,48 +210,234 @@
           </article>
         </div>
       </section>
+
+      <!-- Products from the gallery -->
       <section class="container section-intro">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="collections">Collections</p>
-          <h2 data-i18n="collections_title">Handbags crafted for a timeless wardrobe.</h2>
+          <p class="eyebrow" data-i18n="collections">
+            Collections
+          </p>
+
+          <h2 data-i18n="collections_title">
+            Handbags crafted for a timeless wardrobe.
+          </h2>
         </div>
+
         <div class="card-grid">
+          <!-- Gallery handbag 1 -->
           <article class="product-card">
-            <div class="product-image product-image-1"></div>
-            <h3 data-i18n="classic_satchel">Classic Satchel</h3>
-            <p data-i18n="classic_satchel_copy">Structured lines and subtle hardware make this bag a polished everyday companion.</p>
+            <a
+              class="product-card-link"
+              href="gallery.html"
+              aria-label="View Handmade Crochet Bag in the gallery"
+            >
+              <picture class="product-image">
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/Bag1_1-400.webp 400w,
+                    images/Bag1_1-800.webp 800w,
+                    images/Bag1_1-1200.webp 1200w
+                  "
+                  sizes="
+                    (max-width: 720px) calc(100vw - 4rem),
+                    (max-width: 768px) 45vw,
+                    330px
+                  "
+                >
+
+                <img
+                  src="images/Bag1_1.jpg"
+                  srcset="
+                    images/Bag1_1-400.jpg 400w,
+                    images/Bag1_1-800.jpg 800w,
+                    images/Bag1_1-1200.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 720px) calc(100vw - 4rem),
+                    (max-width: 768px) 45vw,
+                    330px
+                  "
+                  width="800"
+                  height="1000"
+                  alt="Handmade crochet bag"
+                  loading="lazy"
+                >
+              </picture>
+
+              <div class="product-card-copy">
+                <h3 data-i18n="handmade_crochet_bag">
+                  Handmade Crochet Bag
+                </h3>
+
+                <p data-i18n="handmade_crochet_bag_copy">
+                  The handbag stands out for the meticulous attention
+                  to detail in every crochet stitch and its elegant
+                  design.
+                </p>
+
+                <span
+                  class="product-card-action"
+                  data-i18n="view_in_gallery"
+                >
+                  View in Gallery
+                </span>
+              </div>
+            </a>
           </article>
+
+          <!-- Gallery handbag 2 -->
           <article class="product-card">
-            <div class="product-image product-image-2"></div>
-            <h3 data-i18n="woven_crossbody">Woven Crossbody</h3>
-            <p data-i18n="woven_crossbody_copy">Lightweight, elegant, and perfect for carrying essentials with comfort and charm.</p>
+            <a
+              class="product-card-link"
+              href="gallery.html"
+              aria-label="View Handmade Crochet Bag 2 in the gallery"
+            >
+              <picture class="product-image">
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/Bag2_1-400.webp 400w,
+                    images/Bag2_1-800.webp 800w,
+                    images/Bag2_1-1200.webp 1200w
+                  "
+                  sizes="
+                    (max-width: 720px) calc(100vw - 4rem),
+                    (max-width: 768px) 45vw,
+                    330px
+                  "
+                >
+
+                <img
+                  src="images/Bag2_1.jpg"
+                  srcset="
+                    images/Bag2_1-400.jpg 400w,
+                    images/Bag2_1-800.jpg 800w,
+                    images/Bag2_1-1200.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 720px) calc(100vw - 4rem),
+                    (max-width: 768px) 45vw,
+                    330px
+                  "
+                  width="800"
+                  height="1000"
+                  alt="Handmade crochet bag 2"
+                  loading="lazy"
+                >
+              </picture>
+
+              <div class="product-card-copy">
+                <h3 data-i18n="handmade_crochet_bag_2">
+                  Handmade Crochet Bag 2
+                </h3>
+
+                <p data-i18n="handmade_crochet_bag_2_copy">
+                  Structured lines and subtle details make this bag a
+                  polished everyday companion.
+                </p>
+
+                <span
+                  class="product-card-action"
+                  data-i18n="view_in_gallery"
+                >
+                  View in Gallery
+                </span>
+              </div>
+            </a>
           </article>
+
+          <!-- Gallery handbag 3 -->
           <article class="product-card">
-            <div class="product-image product-image-3"></div>
-            <h3 data-i18n="evening_clutch">Evening Clutch</h3>
-            <p data-i18n="evening_clutch_copy">Hand-stitched details and a refined silhouette for special nights out.</p>
+            <a
+              class="product-card-link"
+              href="gallery.html"
+              aria-label="View Woven Crossbody in the gallery"
+            >
+              <picture class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1495121605193-b116b5b9c5d6?auto=format&fit=crop&w=800&q=80"
+                  width="800"
+                  height="1000"
+                  alt="Woven crossbody bag"
+                  loading="lazy"
+                >
+              </picture>
+
+              <div class="product-card-copy">
+                <h3 data-i18n="woven_crossbody">
+                  Woven Crossbody
+                </h3>
+
+                <p data-i18n="woven_crossbody_copy">
+                  Lightweight, elegant, and perfect for carrying
+                  essentials with comfort and charm.
+                </p>
+
+                <span
+                  class="product-card-action"
+                  data-i18n="view_in_gallery"
+                >
+                  View in Gallery
+                </span>
+              </div>
+            </a>
           </article>
+        </div>
+
+        <div class="hero-actions">
+          <a
+            class="button button-primary"
+            href="gallery.html"
+            data-i18n="view_in_gallery"
+          >
+            View Full Gallery
+          </a>
         </div>
       </section>
 
+      <!-- Story -->
       <section class="container story-section">
         <div class="story-copy">
-          <p class="eyebrow" data-i18n="our_story">Our Story</p>
-          <h2 data-i18n="story_title">From a small workspace to your wardrobe.</h2>
-          <p data-i18n="story_copy">Le Petit Sac began as a passion project for crafting beautiful, one-of-a-kind handbags for people who value thoughtful design and quality. Every piece is made slowly and carefully, with love in every stitch.</p>
+          <p class="eyebrow" data-i18n="our_story">
+            Our Story
+          </p>
+
+          <h2 data-i18n="story_title">
+            From a small workspace to your wardrobe.
+          </h2>
+
+          <p data-i18n="story_copy">
+            Le Petit Sac began as a passion project for crafting
+            beautiful, one-of-a-kind handbags for people who value
+            thoughtful design and quality. Every piece is made slowly
+            and carefully, with love in every stitch.
+          </p>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <p class="footer-logo">Le Petit Sac</p>
-          <p>Handmade handbags for everyday elegance.</p>
+          <p class="footer-logo">
+            Le Petit Sac
+          </p>
+
+          <p>
+            Handmade handbags for everyday elegance.
+          </p>
         </div>
+
         <div>
-          <p><strong>Follow us</strong></p>
-          <p>Instagram @lepetitsac</p>
+          <p>
+            <strong>Follow us</strong>
+          </p>
+
+          <p>
+            Instagram @lepetitsac
+          </p>
         </div>
       </div>
     </footer>
