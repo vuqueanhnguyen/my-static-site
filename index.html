@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Static Site</title>
+    <title>Le Petit Sac — Handmade Handbags</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <div class="container header-row">
-        <a class="logo" href="index.html">MySite</a>
+        <a class="logo" href="index.html">Le Petit Sac</a>
         <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
         <nav id="mainNav" class="nav" aria-label="Primary navigation">
           <a class="nav-link" href="index.html">Home</a>
@@ -19,33 +22,73 @@
       </div>
     </header>
 
-    <main class="container">
-      <section class="hero">
-        <h2>Welcome</h2>
-        <p>This is a minimal static website with multiple pages and shared navigation.</p>
+    <main>
+      <section class="hero hero-shop">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Handmade with care</p>
+            <h1>Beautiful bags for every story.</h1>
+            <p class="hero-copy">Each handbag is crafted by hand using premium materials, soft textures, and thoughtful details — perfect for daily life, gifting, or a special occasion.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="contact.html">Shop Inquiry</a>
+              <a class="button button-secondary" href="about.html">Meet the Maker</a>
+            </div>
+          </div>
+          <div class="hero-product-card">
+            <div class="product-visual"></div>
+            <div class="product-copy">
+              <span class="product-tag">Featured</span>
+              <h2>Buttercup Tote</h2>
+              <p>Soft leather finish with delicate embroidered details and a roomy interior.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="page-card">
-        <h2>About</h2>
-        <p>Edit <code>index.html</code>, <code>about.html</code>, and <code>contact.html</code> to expand your site content.</p>
+      <section class="container section-intro">
+        <div class="section-heading">
+          <p class="eyebrow">Collections</p>
+          <h2>Handbags crafted for a timeless wardrobe.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="product-card">
+            <div class="product-image product-image-1"></div>
+            <h3>Classic Satchel</h3>
+            <p>Structured lines and subtle hardware make this bag a polished everyday companion.</p>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-2"></div>
+            <h3>Woven Crossbody</h3>
+            <p>Lightweight, elegant, and perfect for carrying essentials with comfort and charm.</p>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-3"></div>
+            <h3>Evening Clutch</h3>
+            <p>Hand-stitched details and a refined silhouette for special nights out.</p>
+          </article>
+        </div>
       </section>
 
-      <section class="page-card">
-        <h2>Contact</h2>
-        <form id="contactForm">
-          <label for="name">Name</label>
-          <input id="name" name="name" required>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4"></textarea>
-          <button type="submit">Send</button>
-        </form>
+      <section class="container story-section">
+        <div class="story-copy">
+          <p class="eyebrow">Our Story</p>
+          <h2>From a small workspace to your wardrobe.</h2>
+          <p>Le Petit Sac began as a passion project for crafting beautiful, one-of-a-kind handbags for people who value thoughtful design and quality. Every piece is made slowly and carefully, with love in every stitch.</p>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">© <span id="year"></span> MySite</div>
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-logo">Le Petit Sac</p>
+          <p>Handmade handbags for everyday elegance.</p>
+        </div>
+        <div>
+          <p><strong>Follow us</strong></p>
+          <p>Instagram @lepetitsac</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>

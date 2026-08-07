@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About — My Static Site</title>
+    <title>About — Le Petit Sac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <div class="container header-row">
-        <a class="logo" href="index.html">MySite</a>
+        <a class="logo" href="index.html">Le Petit Sac</a>
         <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
         <nav id="mainNav" class="nav" aria-label="Primary navigation">
           <a class="nav-link" href="index.html">Home</a>
@@ -19,29 +22,51 @@
       </div>
     </header>
 
-    <main class="container">
-      <section class="hero">
-        <h2>About This Site</h2>
-        <p>This page is the second page in your static website. It demonstrates a simple multi-page layout and shared navigation.</p>
+    <main>
+      <section class="hero hero-about">
+        <div class="container hero-inner">
+          <p class="eyebrow">Our story</p>
+          <h1>Handcrafted handbags inspired by everyday moments.</h1>
+          <p class="hero-copy">Every bag is made in a small studio with premium fabrics, gentle details, and a dedication to quality that feels personal.</p>
+        </div>
       </section>
 
-      <section class="page-card">
-        <h2>What this site includes</h2>
-        <ul>
-          <li>Shared header and navigation across pages</li>
-          <li>Responsive mobile menu</li>
-          <li>Separate content pages for Home, About, and Contact</li>
-        </ul>
-      </section>
-
-      <section class="page-card">
-        <h2>Next step</h2>
-        <p>Edit this page to describe your project, skills, or website purpose. Then use the navigation bar to move between pages.</p>
+      <section class="container section-intro">
+        <div class="about-grid">
+          <div class="about-copy">
+            <h2>Meet the maker</h2>
+            <p>My mom started creating handbags because she loves turning simple materials into thoughtful accessories. Her designs blend softness, form, and functionality so every bag feels special.</p>
+            <p>She sources sustainable fabric, hand-stitches each seam, and finishes every piece with a care that comes from making something for someone she cares about.</p>
+          </div>
+          <div class="about-values">
+            <article class="value-card">
+              <h3>One-of-a-kind</h3>
+              <p>Each bag is unique, made in small batches with attention to detail.</p>
+            </article>
+            <article class="value-card">
+              <h3>Thoughtful materials</h3>
+              <p>Natural textures and soft palettes create a timeless look.</p>
+            </article>
+            <article class="value-card">
+              <h3>Made to last</h3>
+              <p>Durable craftsmanship means your handbag can be worn again and again.</p>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">© <span id="year"></span> MySite</div>
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-logo">Le Petit Sac</p>
+          <p>Beautiful handmade bags for your everyday story.</p>
+        </div>
+        <div>
+          <p><strong>Contact</strong></p>
+          <p>hello@lepetitsac.com</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>

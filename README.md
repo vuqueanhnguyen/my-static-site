@@ -1,6 +1,6 @@
-# My Static Site (Scaffold)
+# Le Petit Sac — Handmade Handbags
 
-This is a minimal static HTML site scaffold.
+A handcrafted handbag shop website with a refined, elegant shop design.
 
 Quick start
 
