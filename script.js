@@ -289,6 +289,13 @@
 
       const imageWrapper = document.createElement('div');
       imageWrapper.className = 'gallery-image-wrapper';
+      imageWrapper.dataset.id = String(item.id);
+      imageWrapper.setAttribute('role', 'button');
+      imageWrapper.setAttribute('tabindex', '0');
+      imageWrapper.setAttribute(
+        'aria-label',
+        `${getTranslation('view', 'View')} ${title}`
+      );
 
       const image = document.createElement('img');
       image.className = 'gallery-image';
@@ -352,25 +359,38 @@
   }
 
   function attachGalleryButtons(items) {
-    if (!galleryGrid) {
-      return;
-    }
+  if (!galleryGrid) {
+    return;
+  }
 
-    galleryGrid
-      .querySelectorAll('.gallery-view-btn')
-      .forEach(function (button) {
-        button.addEventListener('click', function () {
-          const productId = Number(button.dataset.id);
+  galleryGrid
+    .querySelectorAll('.gallery-image-wrapper')
+    .forEach(function (imageWrapper) {
+      function openSelectedItem() {
+        const productId = Number(imageWrapper.dataset.id);
 
-          const item = items.find(function (product) {
-            return product.id === productId;
-          });
-
-          if (item) {
-            openLightbox(item);
-          }
+        const item = items.find(function (product) {
+          return product.id === productId;
         });
+
+        if (item) {
+          openLightbox(item);
+        }
+      }
+
+      // Open by clicking anywhere on the image
+      imageWrapper.addEventListener('click', function () {
+        openSelectedItem();
       });
+
+      // Keyboard accessibility
+      imageWrapper.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openSelectedItem();
+        }
+      });
+    });
   }
 
   /* ========================================
