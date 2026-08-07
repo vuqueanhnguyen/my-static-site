@@ -2,25 +2,27 @@
 const handbagItems = [
   {
     id: 1,
-    title: 'handmade crochet bag',
-    desc: 'Túi xách len nổi bật với sự tỉ mỉ trong từng mũi móc và kiểu dáng thanh lịch.',
+    title: 'Handmade crochet bag',
+    desc: 'The handbag stands out for the meticulous attention to detail in every crochet stitch and its elegant design',
     images: [
-      'images/Bag1_1.jpg',
+      'images/Bag1_1-400.jpg',
       'images/Bag1_2.jpg',
       'images/Bag1_3.jpg',
       'images/Bag1_4.jpg'
     ],
-    tags: ['Tote', 'Summer', 'Featured']
+    tags: ['Crochet1', 'Summer', 'Featured']
   },
   {
     id: 2,
-    title: 'Classic Satchel',
+    title: 'Handmade crochet bag 2',
     desc: 'Structured lines and subtle hardware make this bag a polished everyday companion.',
     images: [
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80'
+      'images/Bag2_1-400.jpg',
+      'images/Bag2_2.jpg',
+      'images/Bag2_3.jpg',
+      'images/Bag2_4.jpg'
     ],
-    tags: ['Satchel', 'Professional', 'Classic']
+    tags: ['Crochet2', 'Professional', 'Classic']
   },
   {
     id: 3,
