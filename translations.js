@@ -13,17 +13,21 @@ const translations = {
     shop_inquiry: 'Yêu cầu mua hàng',
     meet_maker: 'Gặp người sáng tạo',
     featured: 'Nổi bật',
-    buttercup_title: 'Túi xách len',
-    buttercup_copy: 'Túi xách len nổi bật với sự tỉ mỉ trong từng mũi móc và kiểu dáng thanh lịch.',
+    buttercup_title: 'Túi đan len 1',
+    buttercup_copy: 'Túi đan len nổi bật với sự tỉ mỉ trong từng mũi móc và kiểu dáng thanh lịch.',
+    handmade_crochet_bag: "Túi móc thủ công",
+    handmade_crochet_bag_copy:
+      "Chiếc túi nổi bật với sự chăm chút tỉ mỉ trong từng mũi móc cùng thiết kế thanh lịch.",
+    view_in_gallery: "Xem trong bộ sưu tập",
     
     // Collections
     collections: 'Bộ sưu tập',
     collections_title: 'Những chiếc túi xách và mũ được làm thủ công cho mọi dịp.',
-    classic_satchel: 'Túi Satchel Cổ điển',
+    classic_satchel: 'Túi đan len 2',
     classic_satchel_copy: 'Đường viền cấu trúc và phần cứng tinh tế làm cho chiếc túi này trở thành người bạn đi làm hoàn hảo hàng ngày.',
-    woven_crossbody: 'Túi Crossbody Đan',
+    woven_crossbody: 'Túi đan len 3',
     woven_crossbody_copy: 'Nhẹ, thanh lịch, và hoàn hảo để mang theo những thứ cần thiết với sự thoải mái và quyến rũ.',
-    evening_clutch: 'Túi Clutch Buổi tối',
+    evening_clutch: 'Túi đan len 4',
     evening_clutch_copy: 'Các chi tiết khâu tay và các đường viền tinh chỉnh dành cho những đêm đặc biệt.',
     
     // Story Section
@@ -91,17 +95,20 @@ const translations = {
     shop_inquiry: 'Shop Inquiry',
     meet_maker: 'Meet the Maker',
     featured: 'Featured',
-    buttercup_title: 'handmade crochet bag',
-    buttercup_copy: 'Soft leather finish with delicate embroidered details and a roomy interior.',
-    
+    buttercup_title: 'Handmade crochet bag 1',
+    buttercup_copy: 'The handbag stands out for the meticulous attention to detail in every crochet stitch and its elegant design.',
+    handmade_crochet_bag: "Handmade Crochet Bag",
+    handmade_crochet_bag_copy:
+      "The handbag stands out for the meticulous attention to detail in every crochet stitch and its elegant design.",
+    view_in_gallery: "View in Gallery",
     // Collections
     collections: 'Collections',
     collections_title: 'Handmade handbags and hats for every occasion.',
-    classic_satchel: 'Classic Satchel',
+    classic_satchel: 'Handmade crochet bag 2',
     classic_satchel_copy: 'Structured lines and subtle hardware make this bag a polished everyday companion.',
-    woven_crossbody: 'Woven Crossbody',
+    woven_crossbody: 'Handmade crochet bag 3',
     woven_crossbody_copy: 'Lightweight, elegant, and perfect for carrying essentials with comfort and charm.',
-    evening_clutch: 'Evening Clutch',
+    evening_clutch: 'Handmade crochet bag 4',
     evening_clutch_copy: 'Hand-stitched details and a refined silhouette for special nights out.',
     
     // Story Section

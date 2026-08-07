@@ -26,25 +26,29 @@ const handbagItems = [
   },
   {
     id: 3,
-    title: 'Woven Crossbody',
+    title: 'Handmade crochet bag 3',
     desc: 'Lightweight, elegant, and perfect for carrying essentials with comfort and charm.',
     images: [
-      'https://images.unsplash.com/photo-1495121605193-b116b5b9c5d6?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1520962915462-2f277ed0b07a?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80'
+      'images/Bag3_1.jpg',
+      'images/Bag3_2.jpg',
+      'images/Bag3_3.jpg',
+      'images/Bag3_4.jpg'
     ],
     tags: ['Crossbody', 'Casual', 'Travel']
   },
   {
     id: 4,
-    title: 'Evening Clutch',
+    title: 'Handmade crochet bag 4',
     desc: 'Hand-stitched details and a refined silhouette for special nights out.',
     images: [
-      'https://images.unsplash.com/photo-1520962915462-2f277ed0b07a?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80'
+      'images/Bag4_1.jpg',
+      'images/Bag4_2.jpg',
+      'images/Bag4_3.jpg',
+      'images/Bag4_4.jpg'
     ],
     tags: ['Clutch', 'Evening', 'Special']
-  },
+  }
+  /*,
   {
     id: 5,
     title: 'Leather Backpack',
@@ -87,6 +91,7 @@ const handbagItems = [
     ],
     tags: ['Tote', 'Large', 'Travel']
   }
+  */
 ];
 
 const hatItems = [
@@ -102,7 +107,7 @@ const hatItems = [
   },
   {
     id: 102,
-    title: 'Wool Beret',
+    title: 'Straw Summer Hat 2',
     desc: 'Classic French-inspired beret in soft merino wool. Warm and stylish for any season.',
     images: [
       'https://images.unsplash.com/photo-1529631819178-1bffc26076b5?auto=format&fit=crop&w=800&q=80',
@@ -113,7 +118,7 @@ const hatItems = [
   },
   {
     id: 103,
-    title: 'Wide-Brim Felt Hat',
+    title: 'Straw Summer Hat 3',
     desc: 'Elegant felt hat with a broad brim, perfect for sun protection and sophisticated style.',
     images: [
       'https://images.unsplash.com/photo-1539076519371-39c669300bf0?auto=format&fit=crop&w=800&q=80',
